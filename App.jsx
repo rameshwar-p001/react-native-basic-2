@@ -93,3 +93,36 @@
 // });
 
 
+// //// when we click on button then it will change a name 
+// import { View, Text ,Button} from 'react-native'
+// import React, { useState } from 'react'
+// import { SafeAreaView } from 'react-native-safe-area-context'
+
+// const App = () => {
+//         const [name , setname ]= useState("Patil raemeshwar")
+
+//   return (
+//     <SafeAreaView>
+//       <Text style={{fontSize : 30 }}>my name is = {name}</Text>
+//       <Button title="Press me" onPress={() => setname("Patil Rameshwar ")}/>
+     
+//     </SafeAreaView>
+//   )
+// }
+
+// export default App
+
+ 
+import { View } from 'react-native'
+import React from 'react'
+import Prop1 from './Component/propers/prop1'
+
+const App = () => {
+  return (
+    <View>
+      <Prop1/>
+    </View>
+  )
+}
+
+export default App
