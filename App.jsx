@@ -113,6 +113,7 @@
 // export default App
 
  
+//// Props 
 import { View } from 'react-native'
 import React from 'react'
 import Prop1 from './Component/propers/prop1'

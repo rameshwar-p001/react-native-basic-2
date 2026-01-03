@@ -1,11 +1,20 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text,Button } from 'react-native'
+import React, { useState } from 'react-native'
+import prop2 from './propers/prop2'
+import { SafeAreaView } from 'react-native-safe-area-context'
+
 
 const Prop1 = () => {
+  
+  let [count,setCount] = useState(0)
+  
   return (
-    <View>
+    <SafeAreaView>
       <Text>prop1</Text>
-    </View>
+      <Button title='press'  onPress={()=> setCount(count+1)}/>
+
+      <prop2 data={count}/>
+    </SafeAreaView>
   )
 }
 
